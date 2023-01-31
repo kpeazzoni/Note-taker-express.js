@@ -49,9 +49,20 @@ const readAndAppend = (content, file) => {
   });
 };
 
-// route.delete('./db.json/:id', (req, res) =>{
-//   const deleteNote =  
-// })
+router.delete('./db.json/:id', (req, res) =>{
+  console.log(` ${req.method} note received for ${req.params.id}`);
+  
+  fs.readFile('./db/db.json', 'utf8', (err,data) => {
+  let notesData = JSON.parse(data)
+  for (let note of notesData) {
+    if (req.params.id == note.id);
+    let index = notesData.indexOf(note);
+    notesData.splice(index, 1);
+    fs.writeFile('./db/db.json,', JSON.stringify(notesData, null, 4));
+  }
+  })
+  res.json(notes);
+  });
 
 // this exports the module 
 module.exports = router;

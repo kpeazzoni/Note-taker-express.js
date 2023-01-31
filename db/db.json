@@ -27,5 +27,25 @@
         "title": "Karen's notes",
         "text": "A new little note",
         "note_id": "cc963369-b6b7-4c7a-9da2-85a379b54e54"
+    },
+    {
+        "title": "Karen's 100th note",
+        "text": "this is a new note",
+        "note_id": "fafa40d3-72b0-4e7e-a725-380b5cce95b3"
+    },
+    {
+        "title": "a note from karen",
+        "text": "these notes are getting old",
+        "note_id": "02206e61-d8a6-4dde-a49c-abbef8af7501"
+    },
+    {
+        "title": "a new new note",
+        "text": "toes",
+        "note_id": "dc9f6988-f02b-4973-85f4-eb80692a9bf9"
+    },
+    {
+        "title": "a new note from karen",
+        "text": "this is crap",
+        "note_id": "c157f06f-e864-4f93-97cd-5c17545e83ad"
     }
 ]
