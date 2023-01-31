@@ -1,0 +1,25 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "uuid": "^9.0.0"
+  },
+  "description": "Challenge 11 for UTA bootcamp- Note Taker using express.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpeazzoni/Note-taker-express.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kpeazzoni/Note-taker-express.js/issues"
+  },
+  "homepage": "https://github.com/kpeazzoni/Note-taker-express.js#readme"
+}
