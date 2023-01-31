@@ -14,9 +14,8 @@ const PORT = process.env.PORT || 3001; //25-Ins_Heroku: Sets an initial port. We
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
-app.use("/notes", notes);
-app.use("/index", html)
-
+app.use("/api/notes", notes);
+app.use("/index", html);
 
 
 // GET Route for homepage
