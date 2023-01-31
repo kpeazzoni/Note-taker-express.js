@@ -1,8 +1,10 @@
-const router = require('express').Router();
-const db = require('../db/db.json');
-const { v4: uuidv4 } = require('uuid');
-const { application } = require('express');
-const fs = require('fs');
+// declaring variables
+const router = require('express').Router(); // router method
+const db = require('../db/db.json'); //requiring database
+const { v4: uuidv4 } = require('uuid'); // this will create a unique id
+const { application } = require('express'); 
+const fs = require('fs'); // required to write file
+const { route } = require('.'); 
 
 
 // GET- API/notes function will go here- 
@@ -22,7 +24,7 @@ router.post('/', (req, res) => {
       text,
       note_id: uuidv4()
     };
-    
+// read and write to database
     readAndAppend(newNote, './db/db.json');
     res.json(`Note added successfully 🚀`);
   } else {
@@ -47,6 +49,11 @@ const readAndAppend = (content, file) => {
   });
 };
 
+// route.delete('./db.json/:id', (req, res) =>{
+//   const deleteNote =  
+// })
+
+// this exports the module 
 module.exports = router;
 
 // BONUS: Add delete NOTES
