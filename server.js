@@ -3,7 +3,7 @@
 const express = require("express");
 const path = require("path");
 const notes = require("./routes/notes");
-const html = require("./routes/index")
+// const html = require("./routes/index")
 
 //run express app
 const app = express();
@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use("/api/notes", notes);
-app.use("/index", html);
+// app.use("/index", html);
 
 
 // GET Route for homepage

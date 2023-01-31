@@ -3,7 +3,7 @@ const router = require('express').Router(); // router method
 const db = require('../db/db.json'); //requiring database
 const { v4: uuidv4 } = require('uuid'); // this will create a unique id
 const { application } = require('express'); 
-const fs = require('fs'); // required to write file
+const fs = require('fs');
 const { route } = require('.'); 
 
 
