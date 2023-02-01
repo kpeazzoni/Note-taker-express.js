@@ -48,17 +48,19 @@ const readAndAppend = (content, file) => {
     }
   });
 };
-
-router.delete('./db.json/:id', (req, res) =>{
+// this isn't working and I don't know why
+router.delete('/notes/:id', (req, res) =>{
   console.log(` ${req.method} note received for ${req.params.id}`);
   
-  fs.readFile('./db/db.json', 'utf8', (err,data) => {
+  fs.readFile('/db/db.json', 'utf8', (err,data) => {
   let notesData = JSON.parse(data)
   for (let note of notesData) {
-    if (req.params.id == note.id);
+    if (req.params.id == note.id); {
     let index = notesData.indexOf(note);
     notesData.splice(index, 1);
-    fs.writeFile('./db/db.json,', JSON.stringify(notesData, null, 4));
+    fs.writeFile('./db/db.json,', JSON.stringify(notesData, null, 4), (err) => 
+    err ? console.log(err) : console.log('Your note has been deleted successfully!'));
+  }
   }
   })
   res.json(notes);
