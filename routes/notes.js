@@ -10,8 +10,13 @@ const { route } = require('.');
 // GET- API/notes function will go here- 
 
 router.get('/', (req, res) => {
-
-  res.json(db);
+  fs.readFile('./db/db.json', 'utf8', (err, data) => {
+    if (err) {
+    } else {
+      const parsedData = JSON.parse(data);
+      res.json(parsedData);
+    }
+  })
 });
 
 // POST Route for a new Note
@@ -22,7 +27,7 @@ router.post('/', (req, res) => {
     const newNote = {
       title,
       text,
-      note_id: uuidv4()
+      id: uuidv4()
     };
 // read and write to database
     readAndAppend(newNote, './db/db.json');
@@ -52,7 +57,7 @@ const readAndAppend = (content, file) => {
 router.delete('/notes/:id', (req, res) =>{
   console.log(` ${req.method} note received for ${req.params.id}`);
   
-  fs.readFile('/db/db.json', 'utf8', (err,data) => {
+  fs.readFile('./db/db.json', 'utf8', (err,data) => {
   let notesData = JSON.parse(data)
   for (let note of notesData) {
     if (req.params.id == note.id); {

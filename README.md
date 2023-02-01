@@ -24,10 +24,15 @@ This will be used through the browser for UI, and node.js for backend
 ### Video Link inserted here:
 https://drive.google.com/file/d/1fC9R5AgO2AVd-rr1oXpadJt9kU1x4qO5/view?usp=sharing
 
-
 ## Screenshots
-![Alt text](assets/images/Screen%20Shot%202023-01-22%20at%208.55.51%20PM.png)
-![Alt text](assets/images/Screen%20Shot%202023-01-22%20at%208.55.51%20PM.png)
+![Alt text](public/assets/Screen%20Shot%202023-02-01%20at%208.53.01%20AM.png)
+
+![Alt text](public/assets/Screen%20Shot%202023-02-01%20at%208.53.12%20AM.png)
+
+![Alt text](public/assets/Screen%20Shot%202023-02-01%20at%208.53.37%20AM.png)
+
+![Alt text](public/assets/Screen%20Shot%202023-02-01%20at%208.54.09%20AM.png)
+
 
 ## Credits
 https://www.npmjs.com/package/inquirer#questions
