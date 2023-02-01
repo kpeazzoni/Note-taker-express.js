@@ -22,7 +22,8 @@ This will be used through the browser for UI, and node.js for backend
 
 
 ### Video Link inserted here:
-https://drive.google.com/file/d/1fC9R5AgO2AVd-rr1oXpadJt9kU1x4qO5/view?usp=sharing
+https://karens-note-taker.herokuapp.com/notes
+
 
 ## Screenshots
 ![Alt text](public/assets/Screen%20Shot%202023-02-01%20at%208.53.01%20AM.png)
